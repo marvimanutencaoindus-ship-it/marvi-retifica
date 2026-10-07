@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Marvi Retífica de Motores — manutenção, retífica e serviços automotivos em São Vicente - SP.">
+<title>Marvi Retífica de Motores</title>
+<style>
+:root{--navy:#0a0b24;--blue:#151a4a;--white:#fff;--gray:#f4f5f8;--text:#20212a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff;line-height:1.6}
+header{background:linear-gradient(135deg,#08091c,#171b4d);color:#fff;padding:18px 6%;position:sticky;top:0;z-index:10;box-shadow:0 4px 18px #0003}
+.nav{max-width:1150px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:29px;font-weight:900;letter-spacing:3px;color:#fff}
+.logo span{display:block;font-size:11px;letter-spacing:2px;font-weight:500;color:#cdd0e7}
+nav a{color:#fff;text-decoration:none;margin-left:22px;font-weight:600;font-size:14px}
+.hero{background:radial-gradient(circle at 80% 30%,#29306d 0,#12163e 35%,#070818 75%);color:#fff;min-height:620px;display:flex;align-items:center;padding:70px 6%}
+.hero-inner{max-width:1150px;margin:auto;width:100%;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.badge{display:inline-block;border:1px solid #ffffff40;padding:8px 13px;border-radius:30px;font-size:12px;letter-spacing:1px;margin-bottom:20px}
+h1{font-size:clamp(42px,6vw,76px);line-height:.98;margin-bottom:22px}
+h1 strong{color:#dfe2ff}
+.hero p{font-size:19px;max-width:650px;color:#d8d9e8;margin-bottom:30px}
+.buttons{display:flex;flex-wrap:wrap;gap:13px}
+.btn{display:inline-block;padding:14px 22px;border-radius:8px;text-decoration:none;font-weight:800}
+.btn-main{background:#fff;color:var(--navy)}
+.btn-alt{border:1px solid #fff6;color:#fff}
+.engine{height:330px;border:1px solid #ffffff22;border-radius:24px;background:linear-gradient(145deg,#ffffff12,#00000025);display:flex;align-items:center;justify-content:center;box-shadow:inset 0 0 60px #0005}
+.engine-icon{font-size:130px;filter:drop-shadow(0 12px 20px #0008)}
+section{padding:78px 6%}
+.container{max-width:1150px;margin:auto}
+.section-title{text-align:center;margin-bottom:45px}
+.section-title small{color:#5960a0;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+.section-title h2{font-size:38px;color:var(--navy);margin-top:6px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{padding:30px;border-radius:16px;background:#fff;border:1px solid #e8e9ef;box-shadow:0 10px 30px #0a0b2410}
+.icon{font-size:36px;margin-bottom:13px}.card h3{color:var(--navy);margin-bottom:8px}.card p{color:#666}
+.about{background:var(--gray)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.about-box{background:var(--navy);color:#fff;border-radius:20px;padding:38px}
+.about-box h3{font-size:28px;margin-bottom:14px}.about-box p{color:#d7d8e5}
+.contact{background:var(--navy);color:#fff}
+.contact .section-title h2{color:#fff}.contact .section-title small{color:#aeb4ff}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.contact-card{padding:25px;border:1px solid #ffffff20;border-radius:14px;background:#ffffff08}
+.contact-card b{display:block;margin-bottom:5px}.contact-card a{color:#fff}
+footer{background:#050611;color:#aeb0c2;text-align:center;padding:25px 6%;font-size:13px}
+@media(max-width:800px){
+ nav{display:none}.hero{min-height:auto;padding:70px 6%}.hero-inner{grid-template-columns:1fr}.engine{height:210px}.engine-icon{font-size:90px}
+ .cards,.contact-grid{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr}section{padding:60px 6%}
+}
+</style>
+
+<style>
+.engine-art{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px}
+.engine-label{font-size:10px;letter-spacing:2px;color:#bfc4e4;margin-bottom:8px;text-align:center}
+.engine-svg{width:min(100%,500px);filter:drop-shadow(0 18px 18px #0008)}
+.engine-svg svg{width:100%;height:auto;display:block}
+.parts{background:#fff}
+.parts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.part-card{background:linear-gradient(145deg,#fff,#f2f3f8);border:1px solid #e3e5ed;border-radius:18px;padding:24px;min-height:230px;box-shadow:0 12px 30px #0a0b2410;transition:.2s}
+.part-card:hover{transform:translateY(-4px);box-shadow:0 16px 35px #0a0b2420}
+.part-illustration{height:105px;border-radius:14px;background:linear-gradient(135deg,#0a0b24,#252b63);display:flex;align-items:center;justify-content:center;color:#fff;font-size:72px;font-weight:900;margin-bottom:18px;box-shadow:inset 0 0 35px #0006}
+.piston{font-size:76px}.crank{font-size:82px}.head{font-size:62px}.valve{font-size:85px}.bearing{font-size:78px}.engine-small{font-size:70px}
+.part-card h3{color:#0a0b24;margin-bottom:6px;font-size:19px}.part-card p{color:#666;font-size:14px}
+@media(max-width:800px){.parts-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.parts-grid{grid-template-columns:1fr}.part-card{min-height:205px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="nav">
+  <div class="logo">MARVI<span>RETÍFICA DE MOTORES</span></div>
+  <nav><a href="#servicos">Serviços</a><a href="#pecas">Peças</a><a href="#empresa">A Marvi</a><a href="#contato">Contato</a></nav>
+ </div>
+</header>
+
+<main>
+<section class="hero">
+ <div class="hero-inner">
+  <div>
+   <span class="badge">SÃO VICENTE • SP</span>
+   <h1>Retífica de<br><strong>Motores</strong></h1>
+   <p>Precisão, experiência e cuidado em cada etapa do serviço automotivo.</p>
+   <div class="buttons">
+    <a class="btn btn-main" href="https://wa.me/5513981700595?text=Olá%2C%20vim%20pelo%20site%20da%20Marvi%20e%20gostaria%20de%20um%20orçamento." target="_blank">📲 Pedir orçamento</a>
+    <a class="btn btn-alt" href="https://www.instagram.com/marvi.retifica/" target="_blank">📸 Instagram</a>
+   </div>
+  </div>
+  <div class="engine">
+  <div class="engine-art">
+    <div class="engine-label">PRECISÃO • MOTOR • DESEMPENHO</div>
+    <div class="engine-svg">
+      <svg viewBox="0 0 520 300" role="img" aria-label="Ilustração de um motor automotivo">
+        <defs>
+          <linearGradient id="metal" x1="0" x2="1"><stop offset="0"/><stop offset=".5" stop-color="#687080"/><stop offset="1"/></linearGradient>
+          <linearGradient id="dark" x1="0" x2="1"><stop offset="0" stop-color="#111522"/><stop offset="1" stop-color="#3b4252"/></linearGradient>
+        </defs>
+        <g stroke="#bfc6d6" stroke-width="3">
+          <rect x="105" y="82" width="310" height="145" rx="18" fill="url(#dark)"/>
+          <rect x="145" y="58" width="230" height="38" rx="10" fill="url(#metal)"/>
+          <path d="M150 96h220v38H150z" fill="#242a38"/>
+          <rect x="75" y="116" width="42" height="72" rx="8" fill="#202633"/>
+          <rect x="403" y="116" width="42" height="72" rx="8" fill="#202633"/>
+          <circle cx="180" cy="164" r="29" fill="#151923"/><circle cx="180" cy="164" r="12" fill="#9099aa"/>
+          <circle cx="260" cy="164" r="29" fill="#151923"/><circle cx="260" cy="164" r="12" fill="#9099aa"/>
+          <circle cx="340" cy="164" r="29" fill="#151923"/><circle cx="340" cy="164" r="12" fill="#9099aa"/>
+          <path d="M130 225h260l-25 28H155z" fill="#121722"/>
+          <path d="M155 253h210" fill="none"/>
+          <path d="M170 58V35h28v23M322 58V35h28v23" fill="#343b4a"/>
+          <path d="M115 103H75V75h55M405 103h40V75h-55" fill="none"/>
+        </g>
+        <g fill="#fff">
+          <circle cx="180" cy="164" r="5"/><circle cx="260" cy="164" r="5"/><circle cx="340" cy="164" r="5"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</div>
+ </div>
+</section>
+
+<section id="servicos">
+ <div class="container">
+  <div class="section-title"><small>O que fazemos</small><h2>Nossos serviços</h2></div>
+  <div class="cards">
+   <article class="card"><div class="icon">🔧</div><h3>Retífica de motores</h3><p>Serviços de recuperação e preparação de motores com atenção aos detalhes e às especificações.</p></article>
+   <article class="card"><div class="icon">⚙️</div><h3>Cabeçotes</h3><p>Serviços relacionados a cabeçotes, inspeção, recuperação e preparação para montagem.</p></article>
+   <article class="card"><div class="icon">🛠️</div><h3>Montagem e manutenção</h3><p>Montagem, revisão e manutenção de componentes para devolver desempenho e confiabilidade.</p></article>
+  </div>
+ </div>
+</section>
+
+
+<section class="parts" id="pecas">
+ <div class="container">
+  <div class="section-title"><small>Conheça nosso universo</small><h2>Peças e componentes</h2></div>
+  <div class="parts-grid">
+   <article class="part-card"><div class="part-illustration piston">◉</div><h3>Pistões</h3><p>Componentes fundamentais para a compressão e funcionamento do motor.</p></article>
+   <article class="part-card"><div class="part-illustration crank">⚙</div><h3>Virabrequim</h3><p>Precisão na recuperação e preparação de componentes do conjunto inferior.</p></article>
+   <article class="part-card"><div class="part-illustration head">▥</div><h3>Cabeçotes</h3><p>Inspeção, recuperação e preparação para montagem do motor.</p></article>
+   <article class="part-card"><div class="part-illustration valve">⌁</div><h3>Válvulas</h3><p>Componentes que exigem medidas e ajustes dentro das especificações.</p></article>
+   <article class="part-card"><div class="part-illustration bearing">◎</div><h3>Bronzinas</h3><p>Cuidados com medidas, folgas e condições de montagem.</p></article>
+   <article class="part-card"><div class="part-illustration engine-small">▰</div><h3>Bloco do motor</h3><p>Serviços de recuperação e preparação conforme a necessidade.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="about" id="empresa">
+ <div class="container about-grid">
+  <div>
+   <div class="section-title" style="text-align:left;margin-bottom:18px"><small>Sobre nós</small><h2>MARVI</h2></div>
+   <p>A Marvi atua com serviços de retífica e manutenção automotiva, buscando entregar um trabalho cuidadoso, transparente e profissional.</p>
+   <p style="margin-top:14px">Entre em contato para explicar o problema do veículo e solicitar uma avaliação.</p>
+  </div>
+  <div class="about-box"><h3>Seu motor merece atenção profissional.</h3><p>Fale com a Marvi e consulte nossos serviços e condições para o seu veículo.</p></div>
+ </div>
+</section>
+
+<section class="contact" id="contato">
+ <div class="container">
+  <div class="section-title"><small>Fale conosco</small><h2>Entre em contato</h2></div>
+  <div class="contact-grid">
+   <div class="contact-card"><b>📲 WhatsApp</b><a href="https://wa.me/5513981700595" target="_blank">(13) 98170-0595</a></div>
+   <div class="contact-card"><b>📸 Instagram</b><a href="https://www.instagram.com/marvi.retifica/" target="_blank">@marvi.retifica</a></div>
+   <div class="contact-card"><b>📍 Localização</b><span>Parque Continental<br>São Vicente - SP<br>11348-470</span></div>
+  </div>
+ </div>
+</section>
+</main>
+<footer>© 2026 Marvi Retífica de Motores • São Vicente - SP</footer>
+</body>
+</html>
